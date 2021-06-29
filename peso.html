@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Registro de Peso</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="peso-container">
+    <h1>Registro de Peso</h1>
+    <form id="register-form" action="">
+      <div class="full-box">
+        <label for="data">data</label>
+        <input type="data" name="data" id="data" placeholder="Digite a data">
+      </div>
+      <div class="half-box spacing">
+          <label for="name">Peso</label>
+          <input type="text" name="name" id="name" placeholder="Digite seu peso" data-required data-min-length="3" data-max-length="16">
+      </div>
+      
+      <div class="full-box">
+        <input id="btn-submit" type="submit" value="Registrar">
+      </div>
+    </form>
+  </div>
+  <p class="error-validation template"></p>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
+
